@@ -3,6 +3,7 @@
 
 body {
 	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -23,9 +24,8 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 300;
 }
 
 hr.star-light,
@@ -41,10 +41,9 @@ hr.star-primary {
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
-    font-family: FontAwesome;
     display: inline-block;
-    position: relative; 
-    top: -0.8em;  
+    position: relative;
+    top: -0.8em;
     font-size: 2em;
     padding: 0 0.25em;
 }
@@ -86,7 +85,6 @@ header {
 	.intro-text {
 		.name {
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: 2em;
@@ -116,29 +114,48 @@ header {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 5px 0;
+				height: 88px;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
-	    .navbar-brand {
-	        font-size: 2em;
-	        -webkit-transition: all 0.3s;
-	        -moz-transition: all 0.3s;
-	        transition: all 0.3s;
-	    }        
+
+				.navbar-brand {
+					margin: -15px 0 0;
+				}
+
+				.navbar-brand img {
+					height: 70px;
+					-webkit-transition: all 0.3s;
+					-moz-transition: all 0.3s;
+					transition: all 0.3s;
+				}
+
+				.nav li a { margin-top: 10px; }
     }
+
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-		.navbar-brand {
-	        font-size: 1.5em;
-	    }    
-	}
+        padding: 0px 0;
+				height: 60px;
+
+				.navbar-brand img {
+					height: 50px;
+					-webkit-transition: all 0.3s;
+					-moz-transition: all 0.3s;
+					transition: all 0.3s;
+				}
+
+				.nav li a { margin-top: 0px; }
+			}
+
 }
 
 .navbar {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 300;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	a:focus {
 		outline: none;
 	}
@@ -216,8 +233,8 @@ section.success {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
     }
     * {
@@ -414,7 +431,7 @@ footer {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
 }
