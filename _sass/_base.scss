@@ -53,6 +53,9 @@ p {
 
 .text-faded {
     color: rgba(white, .7);
+    > a {
+      color: white;
+    }
 }
 
 section {
@@ -348,4 +351,3 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
-
