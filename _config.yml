@@ -1,0 +1,12 @@
+# Site settings
+title: ElkarBackup
+email: elkarbackup-users@googlegroups.com
+description: Centralized backup software for your network
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+twitter_username: elkarbackup
+github_username: elkarbackup
+
+# Build settings
+markdown: kramdown
